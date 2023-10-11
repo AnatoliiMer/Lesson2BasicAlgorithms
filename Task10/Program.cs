@@ -1,10 +1,12 @@
-﻿int Promp(String msg)
+﻿int Second(String msg)
 {
-    Console.WriteLine($"{msg}");
-    return
-    Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine(msg);
+    string str=Console.ReadLine();       
+    int namber;
+    namber=int.Parse(str);
+    return namber;
 }
-int number=Promp("Введите трехзначное число");
+int number=Second("Введите трехзначное число");
 if (number>=100&&number<1000)
 {
     int mid = (number%100-number%10)/10;
