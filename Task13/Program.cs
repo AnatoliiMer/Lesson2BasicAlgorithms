@@ -7,17 +7,16 @@ int ThirdNumber(string msg)
 {
   Console.WriteLine(msg);
   string str = Console.ReadLine();
-  int namber;
-  namber = int.Parse(str);
-  return namber;
-  //return Convert.ToInt32(Console.ReadLine());
-}
+  int number;
+  number = int.Parse(str);
+  return number;
+  }
 int number = ThirdNumber("Введите число");
 int fnumber(int number)
 {
   while (number > 999)
   {
-    number /= 10;
+    number = number/10;
   }
   return number % 10;
 }
