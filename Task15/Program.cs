@@ -2,3 +2,11 @@
 //6 -> да
 //7 -> да
 //1 -> нет
+int ThirdNumber(string msg)
+{
+  Console.WriteLine(msg);
+  string str = Console.ReadLine();
+  int number;
+  number = int.Parse(str);
+  return number;
+  }
