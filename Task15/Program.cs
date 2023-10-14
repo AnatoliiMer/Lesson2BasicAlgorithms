@@ -2,11 +2,20 @@
 //6 -> да
 //7 -> да
 //1 -> нет
-int ThirdNumber(string msg)
+int DayWeek(string msg)
 {
-  Console.WriteLine(msg);
-  string str = Console.ReadLine();
-  int number;
-  number = int.Parse(str);
-  return number;
-  }
+    Console.WriteLine(msg);
+    string str = Console.ReadLine();
+    int number;
+    number = int.Parse(str);
+    return number;
+}
+int number = DayWeek("Введите число");
+string not = "Это не день недели";
+string check(int number)
+{
+    if (number >= 6 && number < 8) not = "Да, это выходной";
+    if (number >= 1 && number < 7) not = "Нет, это будний день";
+    return not;
+}
+Console.WriteLine(check(number));
